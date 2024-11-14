@@ -16,4 +16,6 @@ Code for randomizing challenges from a master list - pairs well with Twitch
 
 8. Each time you hit the "start_new_challenge_key," "active_challenges.txt" and "all_session_challenges.txt" will completely refresh. Again, don't hit the key if you're midway through a set of challenges and are just continuing.
 
-9. Have fun!
+9. On OBS, go to Sources, +, Text, "text input mode from file," and select "Appendix/active_challenges.txt." Do the same with "Appendix/all_session_challenges.txt." These will update on your stream in real time as you start the session and complete challenges.
+
+10. Have fun!
