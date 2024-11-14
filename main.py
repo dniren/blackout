@@ -50,7 +50,8 @@ def challenge_completed(challenge_number: int):
     # sub out completed challenge for new one
     with open('Appendix/active_challenges.txt') as f:
         old_challenges: list = f.readlines()
-    old_challenges[challenge_number - 1] = f'{challenge_number}. {new_challenge}'
+    try: old_challenges[challenge_number - 1] = f'{challenge_number}. {new_challenge}'
+    except IndexError: return
     with open('Appendix/active_challenges.txt', 'w') as f:
         f.writelines(old_challenges)
     if not out_of_challenges:
